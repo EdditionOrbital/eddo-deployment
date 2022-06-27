@@ -5,8 +5,7 @@ services:
     build:
       context: ./eddo-backend
       dockerfile: Dockerfile
-    image: sheshenk/eddo:backend
-    container_name: eddo-backend
+    image: vigonometry/eddo:backend
     command: /usr/src/app/node_modules/.bin/nodemon src/index.js
     volumes:
       - ./eddo-backend/:/usr/src/app
@@ -31,8 +30,7 @@ services:
     build:
       context: ./eddo-frontend
       dockerfile: Dockerfile
-    image: sheshenk/eddo:frontend
-    container_name: eddo-frontend
+    image: vigonometry/eddo:frontend
     command: npm start
     volumes:
       - ./eddo-frontend/:/usr/app
@@ -41,7 +39,7 @@ services:
     depends_on:
       - server
     ports:
-      - "8080:8080"
+      - "3000:3000"
     networks:
       - app-network
 
