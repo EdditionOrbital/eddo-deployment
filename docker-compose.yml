@@ -6,6 +6,7 @@ services:
       context: ./eddo-backend
       dockerfile: Dockerfile
     image: vigonometry/eddo:backend
+    container_name: eddo-backend
     command: /usr/src/app/node_modules/.bin/nodemon src/index.js
     volumes:
       - ./eddo-backend/:/usr/src/app
@@ -31,6 +32,7 @@ services:
       context: ./eddo-frontend
       dockerfile: Dockerfile
     image: vigonometry/eddo:frontend
+    container_name: eddo-frontend
     command: npm start
     volumes:
       - ./eddo-frontend/:/usr/app
