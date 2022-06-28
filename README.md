@@ -21,6 +21,5 @@
 
  ## Status Updates
  - ~~Shashank and Vignesh are currently in the midst of deploying this website to Azure Services. Once successful, the link will be made available in this repository!~~
- - Shashank and Vignesh are happy to announce that they have managed to host their website on a DigitalOcean Ubuntu VPS. You may choose to access our site at http://188.166.56.148:3000/ (to be populated with test data)
-
-
+ - Shashank and Vignesh are happy to announce that they have managed to host their website on a DigitalOcean Ubuntu VPS. You may choose to access our site at http://188.166.56.148:3000/ ~~(to be populated with test data)~~
+ - Random Data has been added! You may use a randomly generated user's credentials found on `randomUsers.json` to explore our site.

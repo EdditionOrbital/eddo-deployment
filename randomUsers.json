@@ -1,0 +1,893 @@
+{
+  _id: ObjectId("62ba59d99bbfe690c0702a73"),
+  id: 'A0206300J',
+  firstName: 'Robert',
+  lastName: 'Thomas',
+  email: 'robertthomas@u.nus.edu',
+  password: 'password',
+  mYear: 2020,
+  modules: [
+    {
+      moduleId: 'GES1028-2020-1',
+      lessons: [ 'Lecture-1', 'Tutorial-E3', 'Tutorial-D5' ],
+      role: 'Student'
+    },
+    {
+      moduleId: 'PP5703-2020-1',
+      lessons: [ 'Lecture-1' ],
+      role: 'Student'
+    },
+    { moduleId: 'HY4227-2020-1', lessons: [], role: 'Student' },
+    {
+      moduleId: 'SW3101-2020-1',
+      lessons: [ 'Lecture-1', 'Tutorial-D2', 'Tutorial-E1' ],
+      role: 'Student'
+    },
+    { moduleId: 'YHU2202-2020-1', lessons: [], role: 'Student' },
+    { moduleId: 'ES2002-2020-2', lessons: [], role: 'Student' },
+    {
+      moduleId: 'SC3229-2020-2',
+      lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-E1' ],
+      role: 'Student'
+    },
+    {
+      moduleId: 'EC1301-2020-2',
+      lessons: [ 'Lecture-1', 'Lecture-2', 'Tutorial-E27', 'Tutorial-S13' ],      role: 'Student'
+    },
+    { moduleId: 'ES1000-2020-2', lessons: [], role: 'Student' },
+    { moduleId: 'BMA5901-2020-2', lessons: [], role: 'Student' },
+    {
+      moduleId: 'LAT3202-2020-2',
+      lessons: [ 'Lecture-1', 'Lecture-1' ],
+      role: 'Student'
+    },
+    {
+      moduleId: 'GEH1032-2020-2',
+      lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2', 'Tutorial-3' ],
+      role: 'Student'
+    }
+  ]
+}
+eddo> db.students.findOne()
+{
+  _id: ObjectId("62ba59d99bbfe690c0702a73"),
+  id: 'A0206300J',
+  firstName: 'Robert',
+  lastName: 'Thomas',
+  email: 'robertthomas@u.nus.edu',
+  password: 'password',
+  mYear: 2020,
+  modules: [
+    {
+      moduleId: 'GES1028-2020-1',
+      lessons: [ 'Lecture-1', 'Tutorial-E3', 'Tutorial-D5' ],
+      role: 'Student'
+    },
+    {
+      moduleId: 'PP5703-2020-1',
+      lessons: [ 'Lecture-1' ],
+      role: 'Student'
+    },
+    { moduleId: 'HY4227-2020-1', lessons: [], role: 'Student' },
+    {
+      moduleId: 'SW3101-2020-1',
+      lessons: [ 'Lecture-1', 'Tutorial-D2', 'Tutorial-E1' ],
+      role: 'Student'
+    },
+    { moduleId: 'YHU2202-2020-1', lessons: [], role: 'Student' },
+    { moduleId: 'ES2002-2020-2', lessons: [], role: 'Student' },
+    {
+      moduleId: 'SC3229-2020-2',
+      lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-E1' ],
+      role: 'Student'
+    },
+    {
+      moduleId: 'EC1301-2020-2',
+      lessons: [ 'Lecture-1', 'Lecture-2', 'Tutorial-E27', 'Tutorial-S13' ],      role: 'Student'
+    },
+    { moduleId: 'ES1000-2020-2', lessons: [], role: 'Student' },
+    { moduleId: 'BMA5901-2020-2', lessons: [], role: 'Student' },
+    {
+      moduleId: 'LAT3202-2020-2',
+      lessons: [ 'Lecture-1', 'Lecture-1' ],
+      role: 'Student'
+    },
+    {
+      moduleId: 'GEH1032-2020-2',
+      lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2', 'Tutorial-3' ],
+      role: 'Student'
+    }
+  ]
+}
+eddo> db.students.find()
+[
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a73"),
+    id: 'A0206300J',
+    firstName: 'Robert',
+    lastName: 'Thomas',
+    email: 'robertthomas@u.nus.edu',
+    password: 'password',
+    mYear: 2020,
+    modules: [
+      {
+        moduleId: 'GES1028-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-E3', 'Tutorial-D5' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'PP5703-2020-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'HY4227-2020-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'SW3101-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-D2', 'Tutorial-E1' ],
+        role: 'Student'
+      },
+      { moduleId: 'YHU2202-2020-1', lessons: [], role: 'Student' },
+      { moduleId: 'ES2002-2020-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'SC3229-2020-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-E1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'EC1301-2020-2',
+        lessons: [ 'Lecture-1', 'Lecture-2', 'Tutorial-E27', 'Tutorial-S13' ],
+        role: 'Student'
+      },
+      { moduleId: 'ES1000-2020-2', lessons: [], role: 'Student' },
+      { moduleId: 'BMA5901-2020-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'LAT3202-2020-2',
+        lessons: [ 'Lecture-1', 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GEH1032-2020-2',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2', 'Tutorial-3' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a74"),
+    id: 'A0212522O',
+    firstName: 'Matthew',
+    lastName: 'Zamora',
+    email: 'matthew.zamora@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'AR5951B-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'LL4109V-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'CS5424-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'UTC1702F-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'UTC1117-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'YSC4103-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'MKT3420-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a75"),
+    id: 'A0215465G',
+    firstName: 'Denise',
+    lastName: 'Williams',
+    email: 'denise.williams@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      { moduleId: 'LL4276-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'EC4304-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'YLS1202-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PR5134-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'LL6219-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'MUA1153-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'LSM2191-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GEH1008-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-D2' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a76"),
+    id: 'A0206427W',
+    firstName: 'Carolyn',
+    lastName: 'Case',
+    email: 'carolyn.case@u.nus.edu',
+    password: 'password',
+    mYear: 2020,
+    modules: [
+      {
+        moduleId: 'SG5209-2020-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'PP5703-2020-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'MLE2103-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-2', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'BAA6002-2020-1', lessons: [], role: 'Student' },
+      { moduleId: 'EE4211-2020-1', lessons: [], role: 'Student' },
+      { moduleId: 'ACC3604-2020-1', lessons: [], role: 'Student' },
+      { moduleId: 'YSS3246-2020-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'ID3105-2020-2',
+        lessons: [ 'Tutorial-A1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GS5002-2020-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'EN5242-2020-2', lessons: [], role: 'Student' },
+      { moduleId: 'ES1000-2020-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a77"),
+    id: 'A0217574O',
+    firstName: 'Emily',
+    lastName: 'Young',
+    email: 'emily_young@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'ME2134-2021-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2K', 'Tutorial-2J' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GES1028-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-E3', 'Tutorial-E1' ],
+        role: 'Student'
+      },
+      { moduleId: 'PC2193-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'YSS4103-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'LSM3212-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'LL6033V-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'LSM2191-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GEH1008-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-D2' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'IS4103-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MUA1153-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'ME6303-2021-2',
+        lessons: [ 'Lecture-01' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a78"),
+    id: 'A0217300N',
+    firstName: 'Thomas',
+    lastName: 'Ball',
+    email: 'thomasball@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'IS4301-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-2', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'AR5951B-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'ME2134-2021-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2I', 'Tutorial-2C' ],
+        role: 'Student'
+      },
+      { moduleId: 'MKT1705D-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'GES1028-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D3', 'Tutorial-E3' ],
+        role: 'Student'
+      },
+      { moduleId: 'UTC1702F-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'PC2193-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a79"),
+    id: 'A0199126A',
+    firstName: 'Miranda',
+    lastName: 'Cook',
+    email: 'miranda_cook@u.nus.edu',
+    password: 'password',
+    mYear: 2019,
+    modules: [
+      { moduleId: 'SP1541-2019-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PP5406-2019-1',
+        lessons: [ 'Lecture-2', 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'LL4173V-2019-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'TEE4436-2019-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MNO2705A-2019-2', lessons: [], role: 'Student' },
+      { moduleId: 'EC4351-2019-2', lessons: [], role: 'Student' },
+      { moduleId: 'UTC2719-2019-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'GEH1032-2019-2',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'ACC1002-2019-2',
+        lessons: [ 'Lecture-V1', 'Lecture-V2', 'Tutorial-V20', 'Tutorial-V10' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'MT4001-2019-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a7a"),
+    id: 'A0201367P',
+    firstName: 'Lisa',
+    lastName: 'Johnson',
+    email: 'lisa_johnson@u.nus.edu',
+    password: 'password',
+    mYear: 2020,
+    modules: [
+      { moduleId: 'EC5103R-2020-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'SE1101E-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-E2', 'Tutorial-D9' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GS5002-2020-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'MA3220-2020-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'LSM3223-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'LAH3201-2020-1',
+        lessons: [ 'Lecture-1', 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'ID3105-2020-2',
+        lessons: [ 'Tutorial-A1' ],
+        role: 'Student'
+      },
+      { moduleId: 'AR5954-2020-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'EC2303-2020-2',
+        lessons: [ 'Lecture-1', 'Tutorial-W01', 'Tutorial-W07' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'CN2125-2020-2',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2', 'Tutorial-7' ],
+        role: 'Student'
+      },
+      { moduleId: 'YHU2291-2020-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a7b"),
+    id: 'A0198031D',
+    firstName: 'Austin',
+    lastName: 'Brooks',
+    email: 'austin_brooks@u.nus.edu',
+    password: 'password',
+    mYear: 2019,
+    modules: [
+      {
+        moduleId: 'FE5223-2019-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MNO2706-2019-1', lessons: [], role: 'Student' },
+      { moduleId: 'LL4094V-2019-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'ID1105-2019-1',
+        lessons: [ 'Tutorial-A1', 'Tutorial-A2' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'CS3210-2019-1',
+        lessons: [ 'Lecture-1', 'Tutorial-3', 'Tutorial-4' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'CS2220-2019-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'GET1034-2019-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'MT4001-2019-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'FIN2004-2019-2',
+        lessons: [ 'Lecture-A2', 'Lecture-A1', 'Tutorial-G13', 'Tutorial-G02' ],
+        role: 'Student'
+      },
+      { moduleId: 'BMA5009-2019-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'IS4100-2019-2',
+        lessons: [ 'Lecture-1', 'Tutorial-2', 'Tutorial-1' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a7c"),
+    id: 'A0218544F',
+    firstName: 'Jeff',
+    lastName: 'Elliott',
+    email: 'jeff_elliott@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      { moduleId: 'NM6101-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'UTC1702F-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'MUA1153-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PH2211-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-D4', 'Tutorial-D5' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'TS2240-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-W1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'CS2030-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'SC3202-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-E1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MNO2706-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a7d"),
+    id: 'A0218588R',
+    firstName: 'Seth',
+    lastName: 'Wood',
+    email: 'seth.wood@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'BN5104-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'AR2224-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-4', 'Tutorial-3' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'AR5803-2021-1',
+        lessons: [ 'Tutorial-11', 'Tutorial-9' ],
+        role: 'Student'
+      },
+      { moduleId: 'UTC1702F-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'MKT1705D-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'CN3109-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'LSM2191-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a7e"),
+    id: 'A0216008C',
+    firstName: 'Tonya',
+    lastName: 'Cooper',
+    email: 'tonyacooper@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'CS5424-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'PC2193-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'LSM3212-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'EC5101-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PR5134-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'YSS4103-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'YSS2208-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'CN3109-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a7f"),
+    id: 'A0219762J',
+    firstName: 'Brenda',
+    lastName: 'Cain',
+    email: 'brenda.cain@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      { moduleId: 'YLS1202-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'LL4276-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'AR5803-2021-1',
+        lessons: [ 'Tutorial-6', 'Tutorial-10' ],
+        role: 'Student'
+      },
+      { moduleId: 'EC5101-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'UTS2407-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'GES1028-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D2', 'Tutorial-D1' ],
+        role: 'Student'
+      },
+      { moduleId: 'PC2193-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'MKT1705D-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a80"),
+    id: 'A0219299J',
+    firstName: 'Michael',
+    lastName: 'Montoya',
+    email: 'michael.montoya@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      { moduleId: 'PS4203-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'CM4225-2021-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'ME2134-2021-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2B', 'Tutorial-2J' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'LSM3212-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GEH1008-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D2', 'Tutorial-D1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MUA1153-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'GES1028-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-E1' ],
+        role: 'Student'
+      },
+      { moduleId: 'EC4304-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'LL6219-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a81"),
+    id: 'A0217032F',
+    firstName: 'Catherine',
+    lastName: 'Good',
+    email: 'catherinegood@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'CM4225-2021-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'BN5104-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'BN3202-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'BPS5111-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MNO2706-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'AR5951B-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'CS2030-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GEH1008-2021-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D2', 'Tutorial-D1' ],
+        role: 'Student'
+      },
+      { moduleId: 'YLS1202-2021-2', lessons: [], role: 'Student' },
+      { moduleId: 'MKT1705D-2021-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a82"),
+    id: 'A0214360K',
+    firstName: 'Maurice',
+    lastName: 'Watson',
+    email: 'maurice_watson@u.nus.edu',
+    password: 'password',
+    mYear: 2021,
+    modules: [
+      {
+        moduleId: 'AR2224-2021-1',
+        lessons: [ 'Lecture-1', 'Tutorial-7', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'LX5103-2021-1', lessons: [], role: 'Student' },
+      { moduleId: 'PC2193-2021-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PR5134-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'AR5951B-2021-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'IS4103-2021-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'MUA1153-2021-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'ME2134-2021-2',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-2L', 'Tutorial-2D' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a83"),
+    id: 'A0204672K',
+    firstName: 'Kathleen',
+    lastName: 'Gomez',
+    email: 'kathleen.gomez@u.nus.edu',
+    password: 'password',
+    mYear: 2020,
+    modules: [
+      {
+        moduleId: 'CN2125-2020-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'EE4211-2020-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'EC2102-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-W05', 'Tutorial-W12' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'PL2131-2020-1',
+        lessons: [ 'Lecture-1', 'Tutorial-E13', 'Tutorial-D6' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'EC1301-2020-1',
+        lessons: [ 'Lecture-1', 'Lecture-2', 'Tutorial-S27', 'Tutorial-S28' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'MA3220-2020-1',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'NM3230-2020-2',
+        lessons: [ 'Lecture-1', 'Tutorial-W3', 'Tutorial-W1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'LAM3202-2020-2',
+        lessons: [ 'Lecture-1', 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'GS5002-2020-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'NUR4104B-2020-2',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'SW3101-2020-2',
+        lessons: [ 'Lecture-1', 'Tutorial-D1', 'Tutorial-E1' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a84"),
+    id: 'A0192349A',
+    firstName: 'Jessica',
+    lastName: 'Lucas',
+    email: 'jessica_lucas@u.nus.edu',
+    password: 'password',
+    mYear: 2019,
+    modules: [
+      {
+        moduleId: 'ACC1002-2019-1',
+        lessons: [ 'Lecture-V1', 'Lecture-V2', 'Tutorial-V21', 'Tutorial-V17' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'PP5406-2019-1',
+        lessons: [ 'Lecture-1', 'Lecture-2' ],
+        role: 'Student'
+      },
+      {
+        moduleId: 'EB5207-2019-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'PLC5007-2019-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PC4230-2019-1',
+        lessons: [ 'Lecture-1', 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'BMA5009-2019-2', lessons: [], role: 'Student' },
+      { moduleId: 'GET1034-2019-2', lessons: [], role: 'Student' },
+      { moduleId: 'SP1541-2019-2', lessons: [], role: 'Student' }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a85"),
+    id: 'A0194349O',
+    firstName: 'Karen',
+    lastName: 'Davis',
+    email: 'karendavis@u.nus.edu',
+    password: 'password',
+    mYear: 2019,
+    modules: [
+      { moduleId: 'EC4351-2019-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'FIN2004-2019-1',
+        lessons: [ 'Lecture-A3', 'Lecture-A1', 'Tutorial-G10', 'Tutorial-G07' ],
+        role: 'Student'
+      },
+      { moduleId: 'LL5050V-2019-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'FE5223-2019-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'SP1541-2019-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'PC2134-2019-2',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-1', 'Tutorial-2' ],
+        role: 'Student'
+      }
+    ]
+  },
+  {
+    _id: ObjectId("62ba59d99bbfe690c0702a86"),
+    id: 'A0209641C',
+    firstName: 'Lawrence',
+    lastName: 'Fernandez',
+    email: 'lawrencefernandez@u.nus.edu',
+    password: 'password',
+    mYear: 2020,
+    modules: [
+      {
+        moduleId: 'PR5211-2020-1',
+        lessons: [ 'Lecture-1' ],
+        role: 'Student'
+      },
+      { moduleId: 'YHU4104-2020-1', lessons: [], role: 'Student' },
+      { moduleId: 'TS3222-2020-1', lessons: [], role: 'Student' },
+      {
+        moduleId: 'SG5101-2020-1',
+        lessons: [ 'Lecture-P1', 'Lecture-F1' ],
+        role: 'Student'
+      },
+      { moduleId: 'YHU2291-2020-2', lessons: [], role: 'Student' },
+      {
+        moduleId: 'CN2125-2020-2',
+        lessons: [ 'Lecture-1', 'Lecture-1', 'Tutorial-8', 'Tutorial-4' ],
+        role: 'Student'
+      }
+    ]
+  }
+]
