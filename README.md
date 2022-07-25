@@ -25,8 +25,8 @@ This is a deployment repository for Eddo.
 
 ## Status Updates
 
-- Our site has relocated to https://eddo-zeta.vercel.app (frontend) and https://eddo-server.herokuapp.com (server)
-- New mock data has been added to MongoDB Atlas and will be reflected in `randomUsers.json`
+- Shashank and Vignesh are happy to announce that our site has relocated to its permanent home @ https://eddo-zeta.vercel.app (frontend) and https://eddo-server.herokuapp.com (server)!
+- New mock data has been added to MongoDB Atlas and will be reflected in `randomStudents.json`
 
 ## Status Updates [Archive]
 - ~~Shashank and Vignesh are currently in the midst of deploying this website to Azure Services. Once successful, the link will be made available in this repository!~~
